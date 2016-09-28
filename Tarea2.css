@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.first{
+    border: 3px solid black;
+    height: 180px;  
+    color: green;
+}
+
+.second{
+    border: 3px solid black;
+    color: gold;
+    height: 180px;
+    margin-top: 20px;
+}
+
+.third{
+    border: 3px solid black;
+    color: silver;
+    height: 180px;
+    margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .first, .second, .third{
+        float: left;
+        width: 32%;
+        margin-right: 10px;
+    }
+
+    .first{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .first, .second{
+        float: left;
+        margin-right: 15px;
+        width: 48.2%;
+    }
+
+    .third{
+        margin-top: 235px;
+        width: 98%;
+    }
+
+    .first{
+        margin-top: 20px;
+    }
+}
